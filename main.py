@@ -18,7 +18,7 @@ def print_hi(name):
     connection = mysql.connector.connect(host='localhost',
                                          database='mydb',
                                          user='nouser',
-                                         password='1234')
+                                         password='')
 
     connection.close()
 
