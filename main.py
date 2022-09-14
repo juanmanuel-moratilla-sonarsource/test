@@ -1,3 +1,5 @@
+import psycopg2
+
 # This is a sample Python script.
 
 # Press ⌃R to execute it or replace it with your code.
@@ -13,6 +15,14 @@ def print_hi(name):
         if c == 0:
             print("c == 0")
 
+    connection = psycopg2.connect(
+        host="nope-localhost",
+        database="nodb",
+        user="nop",
+        password="1234")
+
+
+    connection.close()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
