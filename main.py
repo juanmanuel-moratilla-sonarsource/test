@@ -1,4 +1,4 @@
-import psycopg2
+import mysql.connector
 
 # This is a sample Python script.
 
@@ -15,12 +15,10 @@ def print_hi(name):
         if c == 0:
             print("c == 0")
 
-    connection = psycopg2.connect(
-        host="nope-localhost",
-        database="nodb",
-        user="nop",
-        password="1234")
-
+    connection = mysql.connector.connect(host='localhost',
+                                         database='mydb',
+                                         user='nouser',
+                                         password='1234')
 
     connection.close()
 
