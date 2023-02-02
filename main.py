@@ -20,6 +20,7 @@ def print_hi(name):
                                          user='nouser',
                                          password='')
 
+
     connection.close()
 
 # Press the green button in the gutter to run the script.
